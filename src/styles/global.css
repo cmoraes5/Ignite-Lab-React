@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-gray-900 text-gray-100;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-700;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-green-300;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-green-500;
+  }
